@@ -3,7 +3,7 @@ CFLAGS=
 
 .PHONY: main
 
-main:
+main: clean
 	$(CC) $(CFLAGS) -o build/main src/main.cpp
 
 check:
