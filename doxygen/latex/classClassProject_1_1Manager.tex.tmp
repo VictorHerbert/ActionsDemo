@@ -1,0 +1,691 @@
+\hypertarget{classClassProject_1_1Manager}{}\doxysection{Class\+Project\+::Manager Class Reference}
+\label{classClassProject_1_1Manager}\index{ClassProject::Manager@{ClassProject::Manager}}
+
+
+Inheritance diagram for Class\+Project\+::Manager\+:
+% FIG 0
+
+
+Collaboration diagram for Class\+Project\+::Manager\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classClassProject_1_1Manager_a85fce20557dc45950ae3493d6f9f14ea}{Manager}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classClassProject_1_1Manager}{Manager}} class standard constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classClassProject_1_1Manager_a65d3295df9c77aaf00890bf2e17fa97c}\label{classClassProject_1_1Manager_a65d3295df9c77aaf00890bf2e17fa97c}} 
+BDD\+\_\+\+ID {\bfseries create\+Var} (const std\+::string \&label)
+\item 
+const BDD\+\_\+\+ID \& \mbox{\hyperlink{classClassProject_1_1Manager_a5ac1bca2f7c84a6301ed6cb2cbf4e757}{True}} ()
+\begin{DoxyCompactList}\small\item\em returns a pointer for the True node \end{DoxyCompactList}\item 
+const BDD\+\_\+\+ID \& \mbox{\hyperlink{classClassProject_1_1Manager_ab05b37801b21bb61b19c717c2351649d}{False}} ()
+\begin{DoxyCompactList}\small\item\em returns a pointer for the False node \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classClassProject_1_1Manager_aa1231e31de8e47a9ee81f84f625a5314}{is\+Constant}} (BDD\+\_\+\+ID f)
+\begin{DoxyCompactList}\small\item\em Checks if a given node is a constant. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classClassProject_1_1Manager_aa3d86d6110ee67ca7f638c955a8ecfc1}{is\+Variable}} (BDD\+\_\+\+ID x)
+\begin{DoxyCompactList}\small\item\em Checks if a given node is a variable. \end{DoxyCompactList}\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1Manager_a4ed3633e846c583727e32edc8e298dd9}{top\+Var}} (BDD\+\_\+\+ID f)
+\begin{DoxyCompactList}\small\item\em returns the id of the top variable of the given node f \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classClassProject_1_1Manager_a0bbd6c75e3091b9d21292bc5f9629614}\label{classClassProject_1_1Manager_a0bbd6c75e3091b9d21292bc5f9629614}} 
+BDD\+\_\+\+ID {\bfseries top\+Var} (BDD\+\_\+\+ID f, BDD\+\_\+\+ID g)
+\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1Manager_ad47f592f96baccc00c2c1770fa1f4fcb}{high}} (BDD\+\_\+\+ID f)
+\begin{DoxyCompactList}\small\item\em returns the id of the low of the given node f \end{DoxyCompactList}\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1Manager_a042395e67f7524aeab2e6680f4aabfa6}{low}} (BDD\+\_\+\+ID f)
+\begin{DoxyCompactList}\small\item\em returns the id of the high node of the given node f \end{DoxyCompactList}\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1Manager_ad4a473d6633d5667182b51d696090440}{ite}} (BDD\+\_\+\+ID i, BDD\+\_\+\+ID t, BDD\+\_\+\+ID e)
+\begin{DoxyCompactList}\small\item\em If Then Else routine. \end{DoxyCompactList}\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1Manager_ae868953f926153357e8332d632d730fd}{co\+Factor\+True}} (BDD\+\_\+\+ID f, BDD\+\_\+\+ID x)
+\begin{DoxyCompactList}\small\item\em positive cofactor of the function f with respect to variable x \end{DoxyCompactList}\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1Manager_abdb0c5a91edd155b91b816a1c281c742}{co\+Factor\+False}} (BDD\+\_\+\+ID f, BDD\+\_\+\+ID x)
+\begin{DoxyCompactList}\small\item\em negative cofactor of the function f with respect to variable x \end{DoxyCompactList}\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1Manager_a5f674abca3ed40bc61032a1ae957ccce}{co\+Factor\+True}} (BDD\+\_\+\+ID f)
+\begin{DoxyCompactList}\small\item\em positive cofactor of the function f with respect to its top variable \end{DoxyCompactList}\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1Manager_aa302157579ac615f907399adc41005a6}{co\+Factor\+False}} (BDD\+\_\+\+ID f)
+\begin{DoxyCompactList}\small\item\em negative cofactor of the function f with respect to its top variable \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classClassProject_1_1Manager_aec02734ecc14ed9e64c6bee949f71e9e}{update\+Node\+Label}} (BDD\+\_\+\+ID id, BDD\+\_\+\+ID a, BDD\+\_\+\+ID b, std\+::string op)
+\begin{DoxyCompactList}\small\item\em ~\newline
+ \end{DoxyCompactList}\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1Manager_af6f9c21d089f81ad58025a14fb69d4cc}{and2}} (BDD\+\_\+\+ID a, BDD\+\_\+\+ID b)
+\begin{DoxyCompactList}\small\item\em creates a node that represents the AND operation between other two nodes \end{DoxyCompactList}\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1Manager_a001519f8eeed28a5408a9f06d8e28266}{or2}} (BDD\+\_\+\+ID a, BDD\+\_\+\+ID b)
+\begin{DoxyCompactList}\small\item\em creates a node that represents the OR operation between other two nodes \end{DoxyCompactList}\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1Manager_a8e4ad26b6be2efd03b770b53efee4e63}{xor2}} (BDD\+\_\+\+ID a, BDD\+\_\+\+ID b)
+\begin{DoxyCompactList}\small\item\em creates a node that represents the XOR operation between other two nodes \end{DoxyCompactList}\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1Manager_a168302bc90ce46c692869cd397191cd0}{neg}} (BDD\+\_\+\+ID a)
+\begin{DoxyCompactList}\small\item\em creates a node that represents the negated version of a node \end{DoxyCompactList}\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1Manager_a5e30b629caab7daebdc90f4148ddab21}{nand2}} (BDD\+\_\+\+ID a, BDD\+\_\+\+ID b)
+\begin{DoxyCompactList}\small\item\em creates a node that represents the NAND operation between other two nodes \end{DoxyCompactList}\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1Manager_af265f10fc92e99d5c80d7ff1725bbf6b}{nor2}} (BDD\+\_\+\+ID a, BDD\+\_\+\+ID b)
+\begin{DoxyCompactList}\small\item\em creates a node that represents the NOR operation between other two nodes \end{DoxyCompactList}\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1Manager_ad7b5574b6b8118367625e89988663964}{xnor2}} (BDD\+\_\+\+ID a, BDD\+\_\+\+ID b)
+\begin{DoxyCompactList}\small\item\em creates a node that represents the XNOR operation between other two nodes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classClassProject_1_1Manager_a27683826998d51617712d938c427f3d2}\label{classClassProject_1_1Manager_a27683826998d51617712d938c427f3d2}} 
+std\+::string {\bfseries get\+Top\+Var\+Name} (const BDD\+\_\+\+ID \&root)
+\item 
+\mbox{\Hypertarget{classClassProject_1_1Manager_a9da4d59bebf5bed0d0557eccee4e97e6}\label{classClassProject_1_1Manager_a9da4d59bebf5bed0d0557eccee4e97e6}} 
+void {\bfseries find\+Nodes} (const BDD\+\_\+\+ID \&root, std\+::set$<$ BDD\+\_\+\+ID $>$ \&nodes\+\_\+of\+\_\+root)
+\item 
+\mbox{\Hypertarget{classClassProject_1_1Manager_a3fd1dba73fd4dde4d63dc4b8c9603593}\label{classClassProject_1_1Manager_a3fd1dba73fd4dde4d63dc4b8c9603593}} 
+void {\bfseries find\+Vars} (const BDD\+\_\+\+ID \&root, std\+::set$<$ BDD\+\_\+\+ID $>$ \&vars\+\_\+of\+\_\+root)
+\item 
+\mbox{\Hypertarget{classClassProject_1_1Manager_a14df23d00c8b7d5db1498a6196b076ff}\label{classClassProject_1_1Manager_a14df23d00c8b7d5db1498a6196b076ff}} 
+size\+\_\+t {\bfseries unique\+Table\+Size} ()
+\item 
+void \mbox{\hyperlink{classClassProject_1_1Manager_ab6540b4a87c4fb170970703bc0ced3f8}{visualize\+BDD}} (std\+::string filepath, BDD\+\_\+\+ID \&root)
+\begin{DoxyCompactList}\small\item\em Creates an human readable visualization of the OBDD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1Manager_a00bf48e697b6f74d2652631d327996f4}{add\+\_\+unique\+\_\+table}} (\mbox{\hyperlink{structClassProject_1_1NodeData}{Node\+Data}} data)
+\begin{DoxyCompactList}\small\item\em Adds a new entry on the unique table only if there is not a previous entry with same data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClassProject_1_1Manager_aa30bbb87012a1d56f3e9e21bc10dfa37}{bfs}} (const BDD\+\_\+\+ID root, std\+::vector$<$ BDD\+\_\+\+ID $>$ \&order, std\+::vector$<$ bool $>$ \&marc)
+\begin{DoxyCompactList}\small\item\em Creates an human readable visualization of the OBDD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classClassProject_1_1Manager_a4d685bdb0e7843234fac00538d0d2f6b}\label{classClassProject_1_1Manager_a4d685bdb0e7843234fac00538d0d2f6b}} 
+std\+::vector$<$ \mbox{\hyperlink{structClassProject_1_1Node}{Node}} $>$ {\bfseries nodes}
+\item 
+\mbox{\Hypertarget{classClassProject_1_1Manager_ae3ab21575e114c56c2ce4483dd7ba2be}\label{classClassProject_1_1Manager_ae3ab21575e114c56c2ce4483dd7ba2be}} 
+std\+::map$<$ \mbox{\hyperlink{structClassProject_1_1NodeData}{Node\+Data}}, BDD\+\_\+\+ID $>$ {\bfseries unique\+\_\+table}
+\item 
+\mbox{\Hypertarget{classClassProject_1_1Manager_aff7f330104b3544c33f79cef5d31be4e}\label{classClassProject_1_1Manager_aff7f330104b3544c33f79cef5d31be4e}} 
+std\+::map$<$ \mbox{\hyperlink{structClassProject_1_1NodeData}{Node\+Data}}, BDD\+\_\+\+ID $>$ {\bfseries computed\+\_\+table}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classClassProject_1_1Manager_a40c249dc7405c977f95cb475978d3e67}\label{classClassProject_1_1Manager_a40c249dc7405c977f95cb475978d3e67}} 
+static const BDD\+\_\+\+ID {\bfseries FALSE\+\_\+\+ADDRESS} = 0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1Manager_a623b31cb99837edac9338eda157dd979}\label{classClassProject_1_1Manager_a623b31cb99837edac9338eda157dd979}} 
+static const BDD\+\_\+\+ID {\bfseries TRUE\+\_\+\+ADDRESS} = 1
+\item 
+\mbox{\Hypertarget{classClassProject_1_1Manager_a388f5eae5f76c4ad5040cd63f642a3e9}\label{classClassProject_1_1Manager_a388f5eae5f76c4ad5040cd63f642a3e9}} 
+static const \mbox{\hyperlink{structClassProject_1_1Node}{Node}} {\bfseries FALSE\+\_\+\+NODE} = \{.label = \char`\"{}0\char`\"{}, .data = \{.\mbox{\hyperlink{classClassProject_1_1Manager_a4ed3633e846c583727e32edc8e298dd9}{top\+Var}} = Manager\+::\+FALSE\+\_\+\+ADDRESS\}\}
+\item 
+\mbox{\Hypertarget{classClassProject_1_1Manager_ac77eb4991c769f0f545a124f79cdbbbf}\label{classClassProject_1_1Manager_ac77eb4991c769f0f545a124f79cdbbbf}} 
+static const \mbox{\hyperlink{structClassProject_1_1Node}{Node}} {\bfseries TRUE\+\_\+\+NODE} = \{.label = \char`\"{}1\char`\"{}, .data = \{.\mbox{\hyperlink{classClassProject_1_1Manager_a4ed3633e846c583727e32edc8e298dd9}{top\+Var}} = Manager\+::\+TRUE\+\_\+\+ADDRESS\}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classClassProject_1_1Manager_a85fce20557dc45950ae3493d6f9f14ea}\label{classClassProject_1_1Manager_a85fce20557dc45950ae3493d6f9f14ea}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!Manager@{Manager}}
+\index{Manager@{Manager}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{Manager()}{Manager()}}
+{\footnotesize\ttfamily Class\+Project\+::\+Manager\+::\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classClassProject_1_1Manager}{Manager}} class standard constructor. 
+
+\begin{DoxyAuthor}{Author}
+Victor Herbert
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID ID of top variable node 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classClassProject_1_1Manager_a00bf48e697b6f74d2652631d327996f4}\label{classClassProject_1_1Manager_a00bf48e697b6f74d2652631d327996f4}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!add\_unique\_table@{add\_unique\_table}}
+\index{add\_unique\_table@{add\_unique\_table}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{add\_unique\_table()}{add\_unique\_table()}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+Manager\+::add\+\_\+unique\+\_\+table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structClassProject_1_1NodeData}{Node\+Data}}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Adds a new entry on the unique table only if there is not a previous entry with same data. 
+
+\begin{DoxyAuthor}{Author}
+Victor Herbert
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em data} & of the to be added node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID of the added node 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClassProject_1_1Manager_af6f9c21d089f81ad58025a14fb69d4cc}\label{classClassProject_1_1Manager_af6f9c21d089f81ad58025a14fb69d4cc}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!and2@{and2}}
+\index{and2@{and2}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{and2()}{and2()}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+Manager\+::and2 (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{a,  }\item[{BDD\+\_\+\+ID}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+creates a node that represents the AND operation between other two nodes 
+
+\begin{DoxyAuthor}{Author}
+Victor Herbert
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & operand \\
+\hline
+{\em b} & operand \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID of the node which encapsulates the operation 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1Manager_aa30bbb87012a1d56f3e9e21bc10dfa37}\label{classClassProject_1_1Manager_aa30bbb87012a1d56f3e9e21bc10dfa37}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!bfs@{bfs}}
+\index{bfs@{bfs}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{bfs()}{bfs()}}
+{\footnotesize\ttfamily void Class\+Project\+::\+Manager\+::bfs (\begin{DoxyParamCaption}\item[{const BDD\+\_\+\+ID}]{root,  }\item[{std\+::vector$<$ BDD\+\_\+\+ID $>$ \&}]{order,  }\item[{std\+::vector$<$ bool $>$ \&}]{marc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Creates an human readable visualization of the OBDD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filepath} & of the output \\
+\hline
+{\em root} & of the subtree to be printed\\
+\hline
+\end{DoxyParams}
+Creates a .svg diagram of the desired subtree \mbox{\Hypertarget{classClassProject_1_1Manager_aa302157579ac615f907399adc41005a6}\label{classClassProject_1_1Manager_aa302157579ac615f907399adc41005a6}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!coFactorFalse@{coFactorFalse}}
+\index{coFactorFalse@{coFactorFalse}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{coFactorFalse()}{coFactorFalse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+Manager\+::co\+Factor\+False (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+negative cofactor of the function f with respect to its top variable 
+
+\begin{DoxyAuthor}{Author}
+Kamel Fakih
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em f} & ID of node representing function f \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID ID of the node representing the negative cofactor
+\end{DoxyReturn}
+calls \mbox{\hyperlink{classClassProject_1_1Manager_abdb0c5a91edd155b91b816a1c281c742}{co\+Factor\+False(\+BDD\+\_\+\+ID f, BDD\+\_\+\+ID x)}} with x as f\textquotesingle{}s top variable 
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1Manager_abdb0c5a91edd155b91b816a1c281c742}\label{classClassProject_1_1Manager_abdb0c5a91edd155b91b816a1c281c742}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!coFactorFalse@{coFactorFalse}}
+\index{coFactorFalse@{coFactorFalse}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{coFactorFalse()}{coFactorFalse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+Manager\+::co\+Factor\+False (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{f,  }\item[{BDD\+\_\+\+ID}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+negative cofactor of the function f with respect to variable x 
+
+\begin{DoxyAuthor}{Author}
+Kamel Fakih
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em f} & ID of node representing function f \\
+\hline
+{\em x} & ID of node representing variable x \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID ID of the node representing the negative cofactor
+\end{DoxyReturn}
+returns the negative cofactor of the function represented by ID f with respect to the variable represented by ID x. 
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1Manager_a5f674abca3ed40bc61032a1ae957ccce}\label{classClassProject_1_1Manager_a5f674abca3ed40bc61032a1ae957ccce}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!coFactorTrue@{coFactorTrue}}
+\index{coFactorTrue@{coFactorTrue}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{coFactorTrue()}{coFactorTrue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+Manager\+::co\+Factor\+True (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+positive cofactor of the function f with respect to its top variable 
+
+\begin{DoxyAuthor}{Author}
+Kamel Fakih
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em f} & ID of node representing function f \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID ID of the node representing the postive cofactor
+\end{DoxyReturn}
+calls \mbox{\hyperlink{classClassProject_1_1Manager_ae868953f926153357e8332d632d730fd}{co\+Factor\+True(\+BDD\+\_\+\+ID f, BDD\+\_\+\+ID x)}} with x as f\textquotesingle{}s top variable 
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1Manager_ae868953f926153357e8332d632d730fd}\label{classClassProject_1_1Manager_ae868953f926153357e8332d632d730fd}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!coFactorTrue@{coFactorTrue}}
+\index{coFactorTrue@{coFactorTrue}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{coFactorTrue()}{coFactorTrue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+Manager\+::co\+Factor\+True (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{f,  }\item[{BDD\+\_\+\+ID}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+positive cofactor of the function f with respect to variable x 
+
+\begin{DoxyAuthor}{Author}
+Kamel Fakih
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em f} & ID of node representing function f \\
+\hline
+{\em x} & ID of node representing variable x \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID ID of the node representing the postive cofactor
+\end{DoxyReturn}
+returns the positive cofactor of the function represented by ID f with respect to the variable represented by ID x. 
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1Manager_ab05b37801b21bb61b19c717c2351649d}\label{classClassProject_1_1Manager_ab05b37801b21bb61b19c717c2351649d}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!False@{False}}
+\index{False@{False}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{False()}{False()}}
+{\footnotesize\ttfamily const BDD\+\_\+\+ID \& Class\+Project\+::\+Manager\+::\+False (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns a pointer for the False node 
+
+\begin{DoxyAuthor}{Author}
+Victor Herbert
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+const BDD\+\_\+\+ID\& of the False node 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1Manager_ad47f592f96baccc00c2c1770fa1f4fcb}\label{classClassProject_1_1Manager_ad47f592f96baccc00c2c1770fa1f4fcb}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!high@{high}}
+\index{high@{high}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{high()}{high()}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+Manager\+::high (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{f }\end{DoxyParamCaption})}
+
+
+
+returns the id of the low of the given node f 
+
+\begin{DoxyAuthor}{Author}
+Kamel Fakih
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em f} & ID of node representing function f \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID ID of top variable node 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClassProject_1_1Manager_aa1231e31de8e47a9ee81f84f625a5314}\label{classClassProject_1_1Manager_aa1231e31de8e47a9ee81f84f625a5314}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!isConstant@{isConstant}}
+\index{isConstant@{isConstant}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{isConstant()}{isConstant()}}
+{\footnotesize\ttfamily bool Class\+Project\+::\+Manager\+::is\+Constant (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Checks if a given node is a constant. 
+
+\begin{DoxyAuthor}{Author}
+Victor Herbert
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+bool stating if the node is constant 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1Manager_aa3d86d6110ee67ca7f638c955a8ecfc1}\label{classClassProject_1_1Manager_aa3d86d6110ee67ca7f638c955a8ecfc1}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!isVariable@{isVariable}}
+\index{isVariable@{isVariable}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{isVariable()}{isVariable()}}
+{\footnotesize\ttfamily bool Class\+Project\+::\+Manager\+::is\+Variable (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Checks if a given node is a variable. 
+
+\begin{DoxyAuthor}{Author}
+Victor Herbert
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+bool stating if the node is variable 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1Manager_ad4a473d6633d5667182b51d696090440}\label{classClassProject_1_1Manager_ad4a473d6633d5667182b51d696090440}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!ite@{ite}}
+\index{ite@{ite}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{ite()}{ite()}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+Manager\+::ite (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{i,  }\item[{BDD\+\_\+\+ID}]{t,  }\item[{BDD\+\_\+\+ID}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+If Then Else routine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & ID of the If node \\
+\hline
+{\em t} & ID of the Then node \\
+\hline
+{\em e} & ID of the Else node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID of the added node
+\end{DoxyReturn}
+Performs the IF Then Else recursive algorithm, adding nodes on demand 
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1Manager_a042395e67f7524aeab2e6680f4aabfa6}\label{classClassProject_1_1Manager_a042395e67f7524aeab2e6680f4aabfa6}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!low@{low}}
+\index{low@{low}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{low()}{low()}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+Manager\+::low (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{f }\end{DoxyParamCaption})}
+
+
+
+returns the id of the high node of the given node f 
+
+\begin{DoxyAuthor}{Author}
+Kamel Fakih
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em f} & ID of node representing function f \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID ID of top variable node 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClassProject_1_1Manager_a5e30b629caab7daebdc90f4148ddab21}\label{classClassProject_1_1Manager_a5e30b629caab7daebdc90f4148ddab21}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!nand2@{nand2}}
+\index{nand2@{nand2}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{nand2()}{nand2()}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+Manager\+::nand2 (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{a,  }\item[{BDD\+\_\+\+ID}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+creates a node that represents the NAND operation between other two nodes 
+
+\begin{DoxyAuthor}{Author}
+Victor Herbert
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & operand \\
+\hline
+{\em b} & operand \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID of the node which encapsulates the operation 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1Manager_a168302bc90ce46c692869cd397191cd0}\label{classClassProject_1_1Manager_a168302bc90ce46c692869cd397191cd0}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!neg@{neg}}
+\index{neg@{neg}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{neg()}{neg()}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+Manager\+::neg (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+creates a node that represents the negated version of a node 
+
+\begin{DoxyAuthor}{Author}
+Victor Herbert
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & operand \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID of the node which encapsulates the operation
+\end{DoxyReturn}
+//\+TODO 
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1Manager_af265f10fc92e99d5c80d7ff1725bbf6b}\label{classClassProject_1_1Manager_af265f10fc92e99d5c80d7ff1725bbf6b}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!nor2@{nor2}}
+\index{nor2@{nor2}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{nor2()}{nor2()}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+Manager\+::nor2 (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{a,  }\item[{BDD\+\_\+\+ID}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+creates a node that represents the NOR operation between other two nodes 
+
+\begin{DoxyAuthor}{Author}
+Victor Herbert
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & operand \\
+\hline
+{\em b} & operand \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID of the node which encapsulates the operation 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1Manager_a001519f8eeed28a5408a9f06d8e28266}\label{classClassProject_1_1Manager_a001519f8eeed28a5408a9f06d8e28266}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!or2@{or2}}
+\index{or2@{or2}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{or2()}{or2()}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+Manager\+::or2 (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{a,  }\item[{BDD\+\_\+\+ID}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+creates a node that represents the OR operation between other two nodes 
+
+\begin{DoxyAuthor}{Author}
+Victor Herbert
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & operand \\
+\hline
+{\em b} & operand \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID of the node which encapsulates the operation 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1Manager_a4ed3633e846c583727e32edc8e298dd9}\label{classClassProject_1_1Manager_a4ed3633e846c583727e32edc8e298dd9}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!topVar@{topVar}}
+\index{topVar@{topVar}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{topVar()}{topVar()}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+Manager\+::top\+Var (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns the id of the top variable of the given node f 
+
+\begin{DoxyAuthor}{Author}
+Kamel Fakih
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em f} & ID of node representing function f \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID ID of top variable node 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1Manager_a5ac1bca2f7c84a6301ed6cb2cbf4e757}\label{classClassProject_1_1Manager_a5ac1bca2f7c84a6301ed6cb2cbf4e757}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!True@{True}}
+\index{True@{True}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{True()}{True()}}
+{\footnotesize\ttfamily const BDD\+\_\+\+ID \& Class\+Project\+::\+Manager\+::\+True (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns a pointer for the True node 
+
+\begin{DoxyAuthor}{Author}
+Victor Herbert
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+const BDD\+\_\+\+ID\& of the True node 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1Manager_aec02734ecc14ed9e64c6bee949f71e9e}\label{classClassProject_1_1Manager_aec02734ecc14ed9e64c6bee949f71e9e}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!updateNodeLabel@{updateNodeLabel}}
+\index{updateNodeLabel@{updateNodeLabel}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{updateNodeLabel()}{updateNodeLabel()}}
+{\footnotesize\ttfamily bool Class\+Project\+::\+Manager\+::update\+Node\+Label (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{id,  }\item[{BDD\+\_\+\+ID}]{a,  }\item[{BDD\+\_\+\+ID}]{b,  }\item[{std\+::string}]{op }\end{DoxyParamCaption})}
+
+
+
+~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+{\em op} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClassProject_1_1Manager_ab6540b4a87c4fb170970703bc0ced3f8}\label{classClassProject_1_1Manager_ab6540b4a87c4fb170970703bc0ced3f8}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!visualizeBDD@{visualizeBDD}}
+\index{visualizeBDD@{visualizeBDD}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{visualizeBDD()}{visualizeBDD()}}
+{\footnotesize\ttfamily void Class\+Project\+::\+Manager\+::visualize\+BDD (\begin{DoxyParamCaption}\item[{std\+::string}]{filepath,  }\item[{BDD\+\_\+\+ID \&}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates an human readable visualization of the OBDD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filepath} & of the output \\
+\hline
+{\em root} & of the subtree to be printed\\
+\hline
+\end{DoxyParams}
+Creates a .svg diagram of the desired subtree 
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1Manager_ad7b5574b6b8118367625e89988663964}\label{classClassProject_1_1Manager_ad7b5574b6b8118367625e89988663964}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!xnor2@{xnor2}}
+\index{xnor2@{xnor2}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{xnor2()}{xnor2()}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+Manager\+::xnor2 (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{a,  }\item[{BDD\+\_\+\+ID}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+creates a node that represents the XNOR operation between other two nodes 
+
+
+\begin{DoxyItemize}
+\item \begin{DoxyAuthor}{Author}
+Victor Herbert
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & operand \\
+\hline
+{\em b} & operand \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID of the node which encapsulates the operation 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1Manager_a8e4ad26b6be2efd03b770b53efee4e63}\label{classClassProject_1_1Manager_a8e4ad26b6be2efd03b770b53efee4e63}} 
+\index{ClassProject::Manager@{ClassProject::Manager}!xor2@{xor2}}
+\index{xor2@{xor2}!ClassProject::Manager@{ClassProject::Manager}}
+\doxysubsubsection{\texorpdfstring{xor2()}{xor2()}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+Manager\+::xor2 (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{a,  }\item[{BDD\+\_\+\+ID}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+creates a node that represents the XOR operation between other two nodes 
+
+\begin{DoxyAuthor}{Author}
+Victor Herbert
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & operand \\
+\hline
+{\em b} & operand \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID of the node which encapsulates the operation 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Manager.\+h\item 
+src/Manager.\+cpp\end{DoxyCompactItemize}

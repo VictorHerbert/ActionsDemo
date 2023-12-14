@@ -1,0 +1,270 @@
+\hypertarget{classClassProject_1_1OBDDManager}{}\doxysection{Class\+Project\+::OBDDManager Class Reference}
+\label{classClassProject_1_1OBDDManager}\index{ClassProject::OBDDManager@{ClassProject::OBDDManager}}
+
+
+Inheritance diagram for Class\+Project\+::OBDDManager\+:
+% FIG 0
+
+
+Collaboration diagram for Class\+Project\+::OBDDManager\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_a01c17a005afe3b8cd465e0784070e99b}\label{classClassProject_1_1OBDDManager_a01c17a005afe3b8cd465e0784070e99b}} 
+BDD\+\_\+\+ID {\bfseries add\+\_\+unique\+\_\+table} (\mbox{\hyperlink{structClassProject_1_1NodeData}{Node\+Data}} data)
+\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_aa9f4f5a32a05380727e987a5a91c4fd8}\label{classClassProject_1_1OBDDManager_aa9f4f5a32a05380727e987a5a91c4fd8}} 
+BDD\+\_\+\+ID {\bfseries create\+Var} (const std\+::string \&label)
+\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_a8c3165714d1c90e215ce994a19a743d1}\label{classClassProject_1_1OBDDManager_a8c3165714d1c90e215ce994a19a743d1}} 
+const BDD\+\_\+\+ID \& {\bfseries True} ()
+\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_a5d9cb6cdfea06cc76f4f60b64f7f2ffa}\label{classClassProject_1_1OBDDManager_a5d9cb6cdfea06cc76f4f60b64f7f2ffa}} 
+const BDD\+\_\+\+ID \& {\bfseries False} ()
+\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_a69dbe819b1c58ea505e576e4267843b7}\label{classClassProject_1_1OBDDManager_a69dbe819b1c58ea505e576e4267843b7}} 
+bool {\bfseries is\+Constant} (BDD\+\_\+\+ID f)
+\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_acf363ba8b65e7d52b15a5e342707873b}\label{classClassProject_1_1OBDDManager_acf363ba8b65e7d52b15a5e342707873b}} 
+bool {\bfseries is\+Variable} (BDD\+\_\+\+ID x)
+\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1OBDDManager_a254311831546044c67ca1e6ef7278809}{top\+Var}} (BDD\+\_\+\+ID f)
+\begin{DoxyCompactList}\small\item\em returns the id of the top variable of the given node f \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_ae1a311f999cb85afb648a10ff1fd8618}\label{classClassProject_1_1OBDDManager_ae1a311f999cb85afb648a10ff1fd8618}} 
+BDD\+\_\+\+ID {\bfseries top\+Var} (BDD\+\_\+\+ID f, BDD\+\_\+\+ID g)
+\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1OBDDManager_a494e38da71fb061fcae260c2c4a61551}{high}} (BDD\+\_\+\+ID f)
+\begin{DoxyCompactList}\small\item\em returns the id of the low of the given node f \end{DoxyCompactList}\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1OBDDManager_afb560fdf0dba775d1327ef2f860a5869}{low}} (BDD\+\_\+\+ID f)
+\begin{DoxyCompactList}\small\item\em returns the id of the high node of the given node f \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_afafc9567e069e00c9d02123a91c95e23}\label{classClassProject_1_1OBDDManager_afafc9567e069e00c9d02123a91c95e23}} 
+BDD\+\_\+\+ID {\bfseries ite} (BDD\+\_\+\+ID i, BDD\+\_\+\+ID t, BDD\+\_\+\+ID e)
+\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1OBDDManager_a7eb733edf055de2d06b838fa8acdc1b1}{co\+Factor\+True}} (BDD\+\_\+\+ID f, BDD\+\_\+\+ID x)
+\begin{DoxyCompactList}\small\item\em positive cofactor of the function f with respect to variable x \end{DoxyCompactList}\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1OBDDManager_aaf8297ce55e58874c19cfcf4023b38d6}{co\+Factor\+False}} (BDD\+\_\+\+ID f, BDD\+\_\+\+ID x)
+\begin{DoxyCompactList}\small\item\em negative cofactor of the function f with respect to variable x \end{DoxyCompactList}\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1OBDDManager_a04a5e3823cfb66d3d7d711d3173116cb}{co\+Factor\+True}} (BDD\+\_\+\+ID f)
+\begin{DoxyCompactList}\small\item\em positive cofactor of the function f with respect to its top variable \end{DoxyCompactList}\item 
+BDD\+\_\+\+ID \mbox{\hyperlink{classClassProject_1_1OBDDManager_a6ee5cc3369c7fe1569d4f13b780a62f6}{co\+Factor\+False}} (BDD\+\_\+\+ID f)
+\begin{DoxyCompactList}\small\item\em negative cofactor of the function f with respect to its top variable \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_a301c19f63cff8eb23e6568ae135e7140}\label{classClassProject_1_1OBDDManager_a301c19f63cff8eb23e6568ae135e7140}} 
+bool {\bfseries update\+Node\+Label} (BDD\+\_\+\+ID id, BDD\+\_\+\+ID a, BDD\+\_\+\+ID b, std\+::string op)
+\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_ab9658fe2d882e98774cf9e6b86aee95b}\label{classClassProject_1_1OBDDManager_ab9658fe2d882e98774cf9e6b86aee95b}} 
+BDD\+\_\+\+ID {\bfseries and2} (BDD\+\_\+\+ID a, BDD\+\_\+\+ID b)
+\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_a7982b7c9bf7a3e817a8c05b7a53fa07a}\label{classClassProject_1_1OBDDManager_a7982b7c9bf7a3e817a8c05b7a53fa07a}} 
+BDD\+\_\+\+ID {\bfseries or2} (BDD\+\_\+\+ID a, BDD\+\_\+\+ID b)
+\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_ae9d81f2331b4beefd2a33c76991a3115}\label{classClassProject_1_1OBDDManager_ae9d81f2331b4beefd2a33c76991a3115}} 
+BDD\+\_\+\+ID {\bfseries xor2} (BDD\+\_\+\+ID a, BDD\+\_\+\+ID b)
+\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_a54389b4db54bdb7aef672d9d4c965e97}\label{classClassProject_1_1OBDDManager_a54389b4db54bdb7aef672d9d4c965e97}} 
+BDD\+\_\+\+ID {\bfseries neg} (BDD\+\_\+\+ID a)
+\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_a2177533d11215a06f2083a8d8dc78394}\label{classClassProject_1_1OBDDManager_a2177533d11215a06f2083a8d8dc78394}} 
+BDD\+\_\+\+ID {\bfseries nand2} (BDD\+\_\+\+ID a, BDD\+\_\+\+ID b)
+\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_ae94b6a0ada92fcb332a156bb0f24d5b5}\label{classClassProject_1_1OBDDManager_ae94b6a0ada92fcb332a156bb0f24d5b5}} 
+BDD\+\_\+\+ID {\bfseries nor2} (BDD\+\_\+\+ID a, BDD\+\_\+\+ID b)
+\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_a57142c90be1f2c1433f781290cc8f173}\label{classClassProject_1_1OBDDManager_a57142c90be1f2c1433f781290cc8f173}} 
+BDD\+\_\+\+ID {\bfseries xnor2} (BDD\+\_\+\+ID a, BDD\+\_\+\+ID b)
+\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_a988228abfd400e5af430c6e188e50f5c}\label{classClassProject_1_1OBDDManager_a988228abfd400e5af430c6e188e50f5c}} 
+std\+::string {\bfseries get\+Top\+Var\+Name} (const BDD\+\_\+\+ID \&root)
+\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_a0c55fb81e41de849bfb77a8bde3487f0}\label{classClassProject_1_1OBDDManager_a0c55fb81e41de849bfb77a8bde3487f0}} 
+void {\bfseries find\+Nodes} (const BDD\+\_\+\+ID \&root, std\+::set$<$ BDD\+\_\+\+ID $>$ \&nodes\+\_\+of\+\_\+root)
+\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_a27eec53be42e21a072078d9894efec4d}\label{classClassProject_1_1OBDDManager_a27eec53be42e21a072078d9894efec4d}} 
+void {\bfseries find\+Vars} (const BDD\+\_\+\+ID \&root, std\+::set$<$ BDD\+\_\+\+ID $>$ \&vars\+\_\+of\+\_\+root)
+\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_a0f0e28b275ffa285e87fcc4111135840}\label{classClassProject_1_1OBDDManager_a0f0e28b275ffa285e87fcc4111135840}} 
+size\+\_\+t {\bfseries unique\+Table\+Size} ()
+\item 
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_ae2fe9db7014772b4d125f106325b9914}\label{classClassProject_1_1OBDDManager_ae2fe9db7014772b4d125f106325b9914}} 
+void {\bfseries visualize\+BDD} (std\+::string filepath, BDD\+\_\+\+ID \&root)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_a6ee5cc3369c7fe1569d4f13b780a62f6}\label{classClassProject_1_1OBDDManager_a6ee5cc3369c7fe1569d4f13b780a62f6}} 
+\index{ClassProject::OBDDManager@{ClassProject::OBDDManager}!coFactorFalse@{coFactorFalse}}
+\index{coFactorFalse@{coFactorFalse}!ClassProject::OBDDManager@{ClassProject::OBDDManager}}
+\doxysubsubsection{\texorpdfstring{coFactorFalse()}{coFactorFalse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+OBDDManager\+::co\+Factor\+False (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+negative cofactor of the function f with respect to its top variable 
+
+\begin{DoxyAuthor}{Author}
+Kamel Fakih
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em f} & ID of node representing function f \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID ID of the node representing the negative cofactor
+\end{DoxyReturn}
+calls \mbox{\hyperlink{classClassProject_1_1OBDDManager_aaf8297ce55e58874c19cfcf4023b38d6}{co\+Factor\+False(\+BDD\+\_\+\+ID f, BDD\+\_\+\+ID x)}} with x as f\textquotesingle{}s top variable 
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_aaf8297ce55e58874c19cfcf4023b38d6}\label{classClassProject_1_1OBDDManager_aaf8297ce55e58874c19cfcf4023b38d6}} 
+\index{ClassProject::OBDDManager@{ClassProject::OBDDManager}!coFactorFalse@{coFactorFalse}}
+\index{coFactorFalse@{coFactorFalse}!ClassProject::OBDDManager@{ClassProject::OBDDManager}}
+\doxysubsubsection{\texorpdfstring{coFactorFalse()}{coFactorFalse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+OBDDManager\+::co\+Factor\+False (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{f,  }\item[{BDD\+\_\+\+ID}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+negative cofactor of the function f with respect to variable x 
+
+\begin{DoxyAuthor}{Author}
+Kamel Fakih
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em f} & ID of node representing function f \\
+\hline
+{\em x} & ID of node representing variable x \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID ID of the node representing the negative cofactor
+\end{DoxyReturn}
+returns the negative cofactor of the function represented by ID f with respect to the variable represented by ID x. 
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_a04a5e3823cfb66d3d7d711d3173116cb}\label{classClassProject_1_1OBDDManager_a04a5e3823cfb66d3d7d711d3173116cb}} 
+\index{ClassProject::OBDDManager@{ClassProject::OBDDManager}!coFactorTrue@{coFactorTrue}}
+\index{coFactorTrue@{coFactorTrue}!ClassProject::OBDDManager@{ClassProject::OBDDManager}}
+\doxysubsubsection{\texorpdfstring{coFactorTrue()}{coFactorTrue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+OBDDManager\+::co\+Factor\+True (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+positive cofactor of the function f with respect to its top variable 
+
+\begin{DoxyAuthor}{Author}
+Kamel Fakih
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em f} & ID of node representing function f \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID ID of the node representing the postive cofactor
+\end{DoxyReturn}
+calls \mbox{\hyperlink{classClassProject_1_1OBDDManager_a7eb733edf055de2d06b838fa8acdc1b1}{co\+Factor\+True(\+BDD\+\_\+\+ID f, BDD\+\_\+\+ID x)}} with x as f\textquotesingle{}s top variable 
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_a7eb733edf055de2d06b838fa8acdc1b1}\label{classClassProject_1_1OBDDManager_a7eb733edf055de2d06b838fa8acdc1b1}} 
+\index{ClassProject::OBDDManager@{ClassProject::OBDDManager}!coFactorTrue@{coFactorTrue}}
+\index{coFactorTrue@{coFactorTrue}!ClassProject::OBDDManager@{ClassProject::OBDDManager}}
+\doxysubsubsection{\texorpdfstring{coFactorTrue()}{coFactorTrue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+OBDDManager\+::co\+Factor\+True (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{f,  }\item[{BDD\+\_\+\+ID}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+positive cofactor of the function f with respect to variable x 
+
+\begin{DoxyAuthor}{Author}
+Kamel Fakih
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em f} & ID of node representing function f \\
+\hline
+{\em x} & ID of node representing variable x \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID ID of the node representing the postive cofactor
+\end{DoxyReturn}
+returns the positive cofactor of the function represented by ID f with respect to the variable represented by ID x. 
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_a494e38da71fb061fcae260c2c4a61551}\label{classClassProject_1_1OBDDManager_a494e38da71fb061fcae260c2c4a61551}} 
+\index{ClassProject::OBDDManager@{ClassProject::OBDDManager}!high@{high}}
+\index{high@{high}!ClassProject::OBDDManager@{ClassProject::OBDDManager}}
+\doxysubsubsection{\texorpdfstring{high()}{high()}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+OBDDManager\+::high (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{f }\end{DoxyParamCaption})}
+
+
+
+returns the id of the low of the given node f 
+
+\begin{DoxyAuthor}{Author}
+Kamel Fakih
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em f} & ID of node representing function f \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID ID of top variable node 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_afb560fdf0dba775d1327ef2f860a5869}\label{classClassProject_1_1OBDDManager_afb560fdf0dba775d1327ef2f860a5869}} 
+\index{ClassProject::OBDDManager@{ClassProject::OBDDManager}!low@{low}}
+\index{low@{low}!ClassProject::OBDDManager@{ClassProject::OBDDManager}}
+\doxysubsubsection{\texorpdfstring{low()}{low()}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+OBDDManager\+::low (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{f }\end{DoxyParamCaption})}
+
+
+
+returns the id of the high node of the given node f 
+
+\begin{DoxyAuthor}{Author}
+Kamel Fakih
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em f} & ID of node representing function f \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID ID of top variable node 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClassProject_1_1OBDDManager_a254311831546044c67ca1e6ef7278809}\label{classClassProject_1_1OBDDManager_a254311831546044c67ca1e6ef7278809}} 
+\index{ClassProject::OBDDManager@{ClassProject::OBDDManager}!topVar@{topVar}}
+\index{topVar@{topVar}!ClassProject::OBDDManager@{ClassProject::OBDDManager}}
+\doxysubsubsection{\texorpdfstring{topVar()}{topVar()}}
+{\footnotesize\ttfamily BDD\+\_\+\+ID Class\+Project\+::\+OBDDManager\+::top\+Var (\begin{DoxyParamCaption}\item[{BDD\+\_\+\+ID}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+returns the id of the top variable of the given node f 
+
+\begin{DoxyAuthor}{Author}
+Kamel Fakih
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em f} & ID of node representing function f \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BDD\+\_\+\+ID ID of top variable node 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classClassProject_1_1ManagerInterface}{Class\+Project\+::\+Manager\+Interface}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Manager.\+h\item 
+src/Manager.\+cpp\end{DoxyCompactItemize}

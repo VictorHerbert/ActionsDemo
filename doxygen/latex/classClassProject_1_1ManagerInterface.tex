@@ -1,0 +1,83 @@
+\hypertarget{classClassProject_1_1ManagerInterface}{}\doxysection{Class\+Project\+::Manager\+Interface Class Reference}
+\label{classClassProject_1_1ManagerInterface}\index{ClassProject::ManagerInterface@{ClassProject::ManagerInterface}}
+
+
+Inheritance diagram for Class\+Project\+::Manager\+Interface\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_ab101acd3fbe6a5e29973d88f9862b8b4}\label{classClassProject_1_1ManagerInterface_ab101acd3fbe6a5e29973d88f9862b8b4}} 
+virtual BDD\+\_\+\+ID {\bfseries create\+Var} (const std\+::string \&label)=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_a104d0e8bcbd81eb501b66db6e24d1f63}\label{classClassProject_1_1ManagerInterface_a104d0e8bcbd81eb501b66db6e24d1f63}} 
+virtual const BDD\+\_\+\+ID \& {\bfseries True} ()=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_a98d18e1bc840fd664af015facfdcf690}\label{classClassProject_1_1ManagerInterface_a98d18e1bc840fd664af015facfdcf690}} 
+virtual const BDD\+\_\+\+ID \& {\bfseries False} ()=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_a4595e13104cdb6294df54b23393928e2}\label{classClassProject_1_1ManagerInterface_a4595e13104cdb6294df54b23393928e2}} 
+virtual bool {\bfseries is\+Constant} (BDD\+\_\+\+ID f)=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_ad2cf78319932123def1f0f0b02ae651b}\label{classClassProject_1_1ManagerInterface_ad2cf78319932123def1f0f0b02ae651b}} 
+virtual bool {\bfseries is\+Variable} (BDD\+\_\+\+ID x)=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_aed5c34485c731e4d71ad633915830786}\label{classClassProject_1_1ManagerInterface_aed5c34485c731e4d71ad633915830786}} 
+virtual BDD\+\_\+\+ID {\bfseries top\+Var} (BDD\+\_\+\+ID f)=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_a452e85ca74c513a42aae44e2b9512d72}\label{classClassProject_1_1ManagerInterface_a452e85ca74c513a42aae44e2b9512d72}} 
+virtual BDD\+\_\+\+ID {\bfseries ite} (BDD\+\_\+\+ID i, BDD\+\_\+\+ID t, BDD\+\_\+\+ID e)=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_a25adecb52bd809c5fbd1ed0533609cef}\label{classClassProject_1_1ManagerInterface_a25adecb52bd809c5fbd1ed0533609cef}} 
+virtual BDD\+\_\+\+ID {\bfseries co\+Factor\+True} (BDD\+\_\+\+ID f, BDD\+\_\+\+ID x)=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_a8e4875bbf81687301ee138232f86389a}\label{classClassProject_1_1ManagerInterface_a8e4875bbf81687301ee138232f86389a}} 
+virtual BDD\+\_\+\+ID {\bfseries co\+Factor\+False} (BDD\+\_\+\+ID f, BDD\+\_\+\+ID x)=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_a182ca2b585df44b691fed7f82429326e}\label{classClassProject_1_1ManagerInterface_a182ca2b585df44b691fed7f82429326e}} 
+virtual BDD\+\_\+\+ID {\bfseries co\+Factor\+True} (BDD\+\_\+\+ID f)=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_a1cbca3227051f22cef6dd012550f634e}\label{classClassProject_1_1ManagerInterface_a1cbca3227051f22cef6dd012550f634e}} 
+virtual BDD\+\_\+\+ID {\bfseries co\+Factor\+False} (BDD\+\_\+\+ID f)=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_a588f4f52b9943055ec55095f5b67034d}\label{classClassProject_1_1ManagerInterface_a588f4f52b9943055ec55095f5b67034d}} 
+virtual BDD\+\_\+\+ID {\bfseries and2} (BDD\+\_\+\+ID a, BDD\+\_\+\+ID b)=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_a68e94ee4199e189b0c9243991cd86dfb}\label{classClassProject_1_1ManagerInterface_a68e94ee4199e189b0c9243991cd86dfb}} 
+virtual BDD\+\_\+\+ID {\bfseries or2} (BDD\+\_\+\+ID a, BDD\+\_\+\+ID b)=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_acfeadcf9b96defdee3b113ca091d1fbf}\label{classClassProject_1_1ManagerInterface_acfeadcf9b96defdee3b113ca091d1fbf}} 
+virtual BDD\+\_\+\+ID {\bfseries xor2} (BDD\+\_\+\+ID a, BDD\+\_\+\+ID b)=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_a8e7b062caaef78d651a4057f136709fd}\label{classClassProject_1_1ManagerInterface_a8e7b062caaef78d651a4057f136709fd}} 
+virtual BDD\+\_\+\+ID {\bfseries neg} (BDD\+\_\+\+ID a)=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_a650bcb03b7be6f306f0c28f3b0fd3299}\label{classClassProject_1_1ManagerInterface_a650bcb03b7be6f306f0c28f3b0fd3299}} 
+virtual BDD\+\_\+\+ID {\bfseries nand2} (BDD\+\_\+\+ID a, BDD\+\_\+\+ID b)=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_ad94d6df82dfd51cf8d4d1f5b2b62dca8}\label{classClassProject_1_1ManagerInterface_ad94d6df82dfd51cf8d4d1f5b2b62dca8}} 
+virtual BDD\+\_\+\+ID {\bfseries nor2} (BDD\+\_\+\+ID a, BDD\+\_\+\+ID b)=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_a1ec3736db77110a248382825f71fce21}\label{classClassProject_1_1ManagerInterface_a1ec3736db77110a248382825f71fce21}} 
+virtual BDD\+\_\+\+ID {\bfseries xnor2} (BDD\+\_\+\+ID a, BDD\+\_\+\+ID b)=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_afde45b2065361dfa6e61c1c7bc3fc1b4}\label{classClassProject_1_1ManagerInterface_afde45b2065361dfa6e61c1c7bc3fc1b4}} 
+virtual std\+::string {\bfseries get\+Top\+Var\+Name} (const BDD\+\_\+\+ID \&root)=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_ab460e331ffdb85d4128574b3aae72c1e}\label{classClassProject_1_1ManagerInterface_ab460e331ffdb85d4128574b3aae72c1e}} 
+virtual void {\bfseries find\+Nodes} (const BDD\+\_\+\+ID \&root, std\+::set$<$ BDD\+\_\+\+ID $>$ \&nodes\+\_\+of\+\_\+root)=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_ab94feabca2125d334e542e502ae0186d}\label{classClassProject_1_1ManagerInterface_ab94feabca2125d334e542e502ae0186d}} 
+virtual void {\bfseries find\+Vars} (const BDD\+\_\+\+ID \&root, std\+::set$<$ BDD\+\_\+\+ID $>$ \&vars\+\_\+of\+\_\+root)=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_a85cac80444b26e5b80eb96b9f1231c0e}\label{classClassProject_1_1ManagerInterface_a85cac80444b26e5b80eb96b9f1231c0e}} 
+virtual size\+\_\+t {\bfseries unique\+Table\+Size} ()=0
+\item 
+\mbox{\Hypertarget{classClassProject_1_1ManagerInterface_a61d18e20e84ded068d71a2c755d0ed16}\label{classClassProject_1_1ManagerInterface_a61d18e20e84ded068d71a2c755d0ed16}} 
+virtual void {\bfseries visualize\+BDD} (std\+::string filepath, BDD\+\_\+\+ID \&root)=0
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Manager\+Interface.\+h\end{DoxyCompactItemize}
